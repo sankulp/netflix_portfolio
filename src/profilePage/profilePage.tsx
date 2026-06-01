@@ -14,7 +14,7 @@ const ProfilePage: React.FC = () => {
 
   const profile = ['Recruiter', 'Academician', 'Collaborator', 'Visitor'].includes(profileName!)
     ? (profileName as ProfileType)
-    : 'recruiter';
+    : 'Visitor';
   return (
     <>
       <div
