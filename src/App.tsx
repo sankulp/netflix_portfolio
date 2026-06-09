@@ -31,18 +31,18 @@ const App: React.FC = () => {
       <Route path="/skills" element={<Layout><Skills /></Layout>} />
       <Route path="/contact-me" element={<Layout><ContactMe /></Layout>} />
       <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
-      <Route path="/about" element={<Layout><About /></Layout>} />
-      <Route path="/research" element={<Layout><Research /></Layout>} />
-      <Route path="/publications" element={<Layout><Publications /></Layout>} />
-      <Route path="/fellowships" element={<Layout><Fellowships /></Layout>} />
-      <Route path="/conference-reviews" element={<Layout><ConferenceReviews /></Layout>} />
-      <Route path="/research-interests" element={<Layout><ResearchInterests /></Layout>} />
-      <Route path="/invited-talks" element={<Layout><InvitedTalks /></Layout>} />
-      <Route path="/at-a-glance" element={<Layout><AtAGlancePage /></Layout>} />
-      <Route path="/research-problems" element={<Layout><ResearchProblems /></Layout>} />
-      <Route path="/open-to-collaborate" element={<Layout><OpenToCollaborate /></Layout>} />
-      <Route path="/currently" element={<Layout><CurrentlyPage /></Layout>} />
-      <Route path="/fun-facts" element={<Layout><FunFacts /></Layout>} />
+      //<Route path="/about" element={<Layout><About /></Layout>} />
+      //<Route path="/research" element={<Layout><Research /></Layout>} />
+      //<Route path="/publications" element={<Layout><Publications /></Layout>} />
+      //<Route path="/fellowships" element={<Layout><Fellowships /></Layout>} />
+      //<Route path="/conference-reviews" element={<Layout><ConferenceReviews /></Layout>} />
+      //<Route path="/research-interests" element={<Layout><ResearchInterests /></Layout>} />
+      //<Route path="/invited-talks" element={<Layout><InvitedTalks /></Layout>} />
+      //<Route path="/at-a-glance" element={<Layout><AtAGlancePage /></Layout>} />
+      //<Route path="/research-problems" element={<Layout><ResearchProblems /></Layout>} />
+      //<Route path="/open-to-collaborate" element={<Layout><OpenToCollaborate /></Layout>} />
+      //<Route path="/currently" element={<Layout><CurrentlyPage /></Layout>} />
+      //<Route path="/fun-facts" element={<Layout><FunFacts /></Layout>} />
             
     </Routes>
   );
