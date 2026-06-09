@@ -40,10 +40,10 @@ const topPicksConfig = {
 };
 
 const profileLabels: Record<ProfileType, string> = {
-  recruiter: 'Recruiter / HR',
-  academician: 'Academician',
-  collaborator: 'Collaborator',
-  visitor: 'Visitor',
+  Recruiter: 'Recruiter / HR',
+  Academician: 'Academician',
+  Collaborator: 'Collaborator',
+  Visitor: 'Visitor',
 };
 
 const TopPicksRow: React.FC<TopPicksRowProps> = ({ profile }) => {
