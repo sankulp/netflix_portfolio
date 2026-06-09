@@ -8,18 +8,18 @@ import Skills from './pages/Skills';
 import ContactMe from './pages/ContactMe';
 import Layout from './Layout';
 import Certifications from './pages/Certifications';
-import Research from './pages/Research';
-import Publications from './pages/Publications';
-import Fellowships from './pages/Fellowships';
-import ConferenceReviews from './pages/ConferenceReviews';
-import ResearchInterests from './pages/ResearchInterests';
-import InvitedTalks from './pages/InvitedTalks';
-import AtAGlancePage from './pages/AtAGlance';
-import ResearchProblems from './pages/ResearchProblems';
-import OpenToCollaborate from './pages/OpenToCollaborate';
-import CurrentlyPage from './pages/Currently';
-import FunFacts from './pages/FunFacts';
-import About from './pages/About';
+//import Research from './pages/Research';
+//import Publications from './pages/Publications';
+//import Fellowships from './pages/Fellowships';
+//import ConferenceReviews from './pages/ConferenceReviews';
+//import ResearchInterests from './pages/ResearchInterests';
+//import InvitedTalks from './pages/InvitedTalks';
+//import AtAGlancePage from './pages/AtAGlance';
+//import ResearchProblems from './pages/ResearchProblems';
+//import OpenToCollaborate from './pages/OpenToCollaborate';
+//import CurrentlyPage from './pages/Currently';
+//import FunFacts from './pages/FunFacts';
+//import About from './pages/About';
 
 const App: React.FC = () => {
   return (
