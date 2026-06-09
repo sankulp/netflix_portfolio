@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContinueWatching.css';
 
-type ProfileType = 'Recruiter' | 'Academician' | 'Colllaborator' | 'Visitor';
+type ProfileType = 'Recruiter' | 'Academician' | 'Collaborator' | 'Visitor';
 
 interface ContinueWatchingProps {
   profile: ProfileType;
