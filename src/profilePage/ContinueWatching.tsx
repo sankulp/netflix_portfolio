@@ -10,23 +10,23 @@ interface ContinueWatchingProps {
 
 const continueWatchingConfig = {
   Recruiter: [
-    { title: "At a Glance", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Invited Talks", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
+    { title: "At a Glance", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/at-a-glance" },
+    { title: "Invited Talks", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/invited-talks" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   Academician: [
-    { title: "At a Glance", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Invited Talks", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
+    { title: "At a Glance", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/at-a-glance" },
+    { title: "Invited Talks", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/invited-talks" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   Collaborator: [
-    { title: "Current Research Problem", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Open to Collaboration", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Current Research Problem", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/research-problems" },
+    { title: "Open to Collaboration", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/open-to-collaborate" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   Visitor: [
-    { title: "Currently", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Fun Facts", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
+    { title: "Currently", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/currently" },
+    { title: "Fun Facts", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/fun-facts" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ]
 };

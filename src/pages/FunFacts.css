@@ -1,0 +1,81 @@
+/* FunFacts.css */
+.facts-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.facts-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.facts-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.facts-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.facts-grid {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.fact-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid #e50914;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.25);
+}
+
+.fact-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.fact-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.fact-category {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(229, 9, 20, 0.15);
+  color: #e50914;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.fact-description {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}

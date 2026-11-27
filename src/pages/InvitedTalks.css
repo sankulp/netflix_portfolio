@@ -1,0 +1,97 @@
+/* InvitedTalks.css */
+.talks-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.talks-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.talks-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.talks-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.talks-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.talk-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #e50914;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.talk-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.25);
+}
+
+.talk-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.talk-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.talk-meta {
+  color: #e50914;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.talk-location-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.talk-description {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.talk-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e50914;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.talk-link:hover {
+  text-decoration: underline;
+}

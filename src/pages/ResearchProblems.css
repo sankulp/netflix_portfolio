@@ -1,0 +1,114 @@
+/* ResearchProblems.css */
+.problems-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.problems-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.problems-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.problems-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.problems-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.problem-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #e50914;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.25);
+}
+
+.problem-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.problem-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.problem-domain-badge {
+  background: rgba(229, 9, 20, 0.15);
+  color: #e50914;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.problem-section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.problem-text {
+  color: #ccc;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+.problem-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.problem-meta-item {
+  font-size: 0.85rem;
+}
+
+.problem-meta-label {
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.problem-meta-value {
+  color: #fff;
+  font-weight: 500;
+}

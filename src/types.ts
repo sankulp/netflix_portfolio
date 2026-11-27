@@ -1,11 +1,9 @@
 // types.ts
 
 export interface ProfileBanner {
-  backgroundImage: { url: string };
+  backgroundImage?: { url: string } | null;
   headline: string;
-  resumeLink: {
-    url: string;
-  };
+  resumeLink?: string | { url: string };
   linkedinLink: string;
   profileSummary: string;
 }
@@ -42,14 +40,19 @@ export interface Certification {
 }
 
 export interface ContactMe {
-  profilePicture: { url: string };
+  profilePicture?: { url: string };
   name: string;
   title: string;
   summary: string;
-  companyUniversity: string;
-  linkedinLink: string;
-  email: string;
-  phoneNumber: string;
+  companyUniversity?: string;
+  emails?: string;
+  email?: string;
+  linkedinProfile?: string;
+  linkedin_profile?: string;
+  linkedinLink?: string;
+  orcidLink?: string;
+  orcid_link?: string;
+  phoneNumber?: string;
 }
 
 export interface Skill { 
@@ -58,3 +61,85 @@ export interface Skill {
   description: string;
   icon: string;
 }
+
+export interface Publication {
+  title: string;
+  coAuthors?: string;
+  authors?: string;
+  venue?: string;
+  journalConference?: string;
+  year: string | number;
+  publicationStatus?: string;
+  publication_status?: string;
+  link?: string;
+  description?: string;
+  abstract?: string;
+}
+
+export interface Fellowship {
+  title: string;
+  organization: string;
+  year: string;
+  description: string;
+  link?: string;
+}
+
+export interface PeerReviewedConference {
+  conferenceName: string;
+  role: string;
+  year: string;
+  description?: string;
+  link?: string;
+}
+
+export type ConferenceReview = PeerReviewedConference;
+
+export interface ResearchInterest {
+  title: string;
+  description: string;
+  keywords?: string;
+  icon?: string;
+}
+
+export interface InvitedTalk {
+  title: string;
+  event: string;
+  date: string;
+  organization?: string;
+  location?: string;
+  description?: string;
+  link?: string;
+}
+
+export interface AtAGlance {
+  headline?: string;
+  summary?: string;
+  highlights?: string;
+  label?: string;
+  value?: string;
+  description?: string;
+  icon?: string;
+}
+
+export interface ResearchProblem {
+  title: string;
+  domain?: string;
+  problemStatement?: string;
+  description?: string;
+  methodology?: string;
+  currentStatus?: string;
+  link?: string;
+}
+
+export interface FunFact {
+  fact: string;
+  description?: string;
+  category?: string;
+  icon?: string;
+}
+
+
+
+
+
+

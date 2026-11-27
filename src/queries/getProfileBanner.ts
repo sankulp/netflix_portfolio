@@ -4,22 +4,19 @@ import { ProfileBanner } from '../types';
 
 const GET_PROFILE_BANNER = `
  {
-  profilebanner {
+  profileBanner {
+    headline
+    profileSummary
+    linkedinLink
+    resumeLink
     backgroundImage {
       url
     }
-    headline
-    resumeLink {
-      url
-    }
-    linkedinLink
-    profileSummary
   }
 }
 `;
 
 export async function getProfileBanner(): Promise<ProfileBanner> {
-  const data = await datoCMSClient.request<{ profilebanner: ProfileBanner }>(GET_PROFILE_BANNER);
-  console.log("🚀 ~ getProfileBanner ~ data:", data)
-  return data.profilebanner;
+  const data = await datoCMSClient.request<{ profileBanner: ProfileBanner }>(GET_PROFILE_BANNER);
+  return data.profileBanner;
 }

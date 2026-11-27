@@ -1,0 +1,197 @@
+.conf-container {
+  min-height: 100vh;
+  background: #141414;
+  color: #fff;
+  padding: 100px 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conf-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.conf-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conf-subtitle {
+  color: #aaa;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+}
+
+/* Filter bar */
+.conf-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.conf-filter-btn {
+  background: #2a2a2a;
+  color: #ccc;
+  border: 1px solid #444;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.conf-filter-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #DB202C;
+}
+
+.conf-filter-btn.active {
+  background: #DB202C;
+  color: #fff;
+  border-color: #DB202C;
+  font-weight: 600;
+}
+
+/* Grid */
+.conf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* Cards */
+.conf-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 22px 20px;
+  border-left: 4px solid #444;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.conf-card.rank-Astar {
+  border-left-color: #FFD700;
+}
+
+.conf-card.rank-A {
+  border-left-color: #DB202C;
+}
+
+.conf-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.conf-rank-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.conf-rank-badge.rank-Astar {
+  background: rgba(255, 215, 0, 0.15);
+  color: #FFD700;
+  border: 1px solid #FFD700;
+}
+
+.conf-rank-badge.rank-A {
+  background: rgba(219, 32, 44, 0.15);
+  color: #ff6b7a;
+  border: 1px solid #DB202C;
+}
+
+.conf-acronym {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e5e5e5;
+  background: #2d2d2d;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+
+.conf-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.conf-field,
+.conf-deadline,
+.conf-date,
+.conf-location,
+.conf-note {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.conf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  color: #DB202C;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.conf-link:hover {
+  color: #ff4d5e;
+  text-decoration: underline;
+}
+
+.conf-footer-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.conf-footer-note a {
+  color: #DB202C;
+  text-decoration: none;
+}
+
+.conf-footer-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .conf-container {
+    padding: 90px 20px 40px;
+  }
+  .conf-title {
+    font-size: 1.5rem;
+  }
+  .conf-grid {
+    grid-template-columns: 1fr;
+  }
+}

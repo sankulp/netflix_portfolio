@@ -21,7 +21,13 @@ const ProfileBanner: React.FC = () => {
   if (!bannerData) return <div>Loading...</div>;
 
   const handlePlayClick = () => {
-    window.open(bannerData.resumeLink.url, '_blank');
+    if (!bannerData?.resumeLink) return;
+    const resumeUrl = typeof bannerData.resumeLink === 'string'
+      ? bannerData.resumeLink
+      : bannerData.resumeLink.url;
+    if (resumeUrl) {
+      window.open(resumeUrl, '_blank');
+    }
   };
 
   const handleLinkedinClick = () => { 
@@ -46,3 +52,4 @@ const ProfileBanner: React.FC = () => {
 };
 
 export default ProfileBanner;
+

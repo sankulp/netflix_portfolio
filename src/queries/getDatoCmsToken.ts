@@ -1,15 +1,18 @@
 // getDatoCmsToken.ts
 
 export const getDatoCmsToken = (): string => {
+  // Check direct general token first
+  if (process.env.REACT_APP_DATOCMS_TOKEN) {
+    return process.env.REACT_APP_DATOCMS_TOKEN;
+  }
+
+  if (process.env.REACT_APP_DATOCMS_ROR_TOKEN) {
+    return process.env.REACT_APP_DATOCMS_ROR_TOKEN;
+  }
+
   const hostname = window.location.hostname;
 
   switch (hostname) {
-    case 'ror.sumanthsamala.com':
-    case 'sumanthsamala.com':
-    case 'ror.localhost':
-    case 'localhost':
-      return process.env.REACT_APP_DATOCMS_ROR_TOKEN ?? '';
-
     case 'java.sumanthsamala.com':
     case 'java.localhost':
       return process.env.REACT_APP_DATOCMS_JAVA_TOKEN ?? '';
@@ -23,6 +26,6 @@ export const getDatoCmsToken = (): string => {
       return process.env.REACT_APP_DATOCMS_NODE_TOKEN ?? '';
 
     default:
-      throw new Error(`No DatoCMS token configured for hostname: ${hostname}`);
+      return process.env.REACT_APP_DATOCMS_ROR_TOKEN ?? process.env.REACT_APP_DATOCMS_TOKEN ?? '';
   }
 };

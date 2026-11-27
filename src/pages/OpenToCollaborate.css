@@ -1,0 +1,105 @@
+/* OpenToCollaborate.css */
+.collab-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.collab-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.collab-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.collab-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.collab-grid {
+  max-width: 950px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.collab-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid #e50914;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.collab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.25);
+}
+
+.collab-card h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.collab-card p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.collab-footer-card {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 36px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.collab-footer-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.collab-footer-card p {
+  color: #888;
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.collab-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e50914;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.collab-cta-btn:hover {
+  background: #f40612;
+  transform: translateY(-2px);
+}

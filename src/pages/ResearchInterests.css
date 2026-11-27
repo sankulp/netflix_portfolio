@@ -1,0 +1,69 @@
+/* ResearchInterests.css */
+.interests-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.interests-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.interests-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.interests-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.interests-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.interest-card {
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.3);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.interest-icon-wrapper {
+  font-size: 2.2rem;
+  color: #e50914;
+  margin-bottom: 16px;
+}
+
+.interest-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.interest-description {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

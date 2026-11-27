@@ -2,28 +2,55 @@ import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+
+import {
+  FaPython, FaBrain, FaDatabase, FaChartBar, FaMicrochip, FaProjectDiagram, FaRobot, FaEye
+} from 'react-icons/fa';
+import {
+  SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiOpencv, SiPandas, SiNumpy,
+  SiJupyter, SiMicrosoftazure, SiGooglecloud, SiDocker, SiGit, SiMysql,
+  SiMongodb, SiPowerbi, SiTableau, SiAnaconda, SiLinux,
+  SiHuggingface, SiLangchain
+} from 'react-icons/si';
 import { Skill } from '../types';
 
+// Icon map — keys must match what you enter in DatoCMS "icon" field
 const iconMap: { [key: string]: JSX.Element } = {
-  SiRubyonrails: <SiRubyonrails />,
-  FaNodeJs: <FaNodeJs />,
-  SiSpringboot: <SiSpringboot />,
-  FaJava: <FaJava />,
-  SiPhp: <SiPhp />,
-  FaReact: <FaReact />,
-  SiTypescript: <SiTypescript />,
-  FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
-  SiPostgresql: <SiPostgresql />,
+  // Core ML / DL
+  FaPython: <FaPython />,
+  SiTensorflow: <SiTensorflow />,
+  SiPytorch: <SiPytorch />,
+  SiKeras: <SiKeras />,
+  SiScikitlearn: <SiScikitlearn />,
+  SiHuggingface: <SiHuggingface />,
+  SiLangchain: <SiLangchain />,
+  // Computer Vision
+  SiOpencv: <SiOpencv />,
+  FaEye: <FaEye />,
+  // Data & Analytics
+  SiPandas: <SiPandas />,
+  SiNumpy: <SiNumpy />,
+  SiPowerbi: <SiPowerbi />,
+  SiTableau: <SiTableau />,
+  SiMatlaboctave: <FaChartBar />,  // MATLAB fallback (SiMatlaboctave not in this react-icons version)
+  FaChartBar: <FaChartBar />,
+  // Databases
   SiMysql: <SiMysql />,
-  SiKubernetes: <SiKubernetes />,
+  SiMongodb: <SiMongodb />,
+  FaDatabase: <FaDatabase />,
+  // Cloud & Dev Tools
+  SiMicrosoftazure: <SiMicrosoftazure />,
   SiGooglecloud: <SiGooglecloud />,
-  SiHeroku: <SiHeroku />,
-  SiNetlify: <SiNetlify />,
-  SiRabbitmq: <SiRabbitmq />,
-  SiImessage: <SiImessage />,
+  SiDocker: <SiDocker />,
+  SiGit: <SiGit />,
+  SiJupyter: <SiJupyter />,
+  SiAnaconda: <SiAnaconda />,
+  SiLinux: <SiLinux />,
+  // Concepts (generic icons)
+  FaBrain: <FaBrain />,
+  FaRobot: <FaRobot />,
+  FaMicrochip: <FaMicrochip />,
+  FaProjectDiagram: <FaProjectDiagram />,
 };
 
 
@@ -57,7 +84,7 @@ const Skills: React.FC = () => {
           <div className="skills-grid">
             {skillsByCategory[category].map((skill: any, idx: number) => (
               <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <FaReact />}</div>
+                <div className="icon">{iconMap[skill.icon] || <FaBrain />}</div>
                 <h3 className="skill-name">
                   {skill.name.split('').map((letter: any, i: number) => (
                     <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>

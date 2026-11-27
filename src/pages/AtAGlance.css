@@ -1,0 +1,105 @@
+/* AtAGlance.css */
+.glance-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.glance-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.glance-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.glance-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.glance-stats-grid {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.glance-stat-card {
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.glance-stat-card:hover {
+  transform: translateY(-4px);
+  border-color: #e50914;
+}
+
+.glance-stat-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #e50914;
+  margin-bottom: 8px;
+}
+
+.glance-stat-label {
+  font-size: 0.95rem;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.glance-stat-sub {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.glance-summary-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 4px solid #e50914;
+}
+
+.glance-summary-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.glance-summary-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.glance-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.glance-point-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}

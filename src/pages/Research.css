@@ -1,0 +1,119 @@
+/* Research.css */
+.research-container {
+  padding: 120px 20px 60px;
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.research-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.research-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.research-subtitle {
+  color: #a3a3a3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.research-main-card {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 4px solid #e50914;
+}
+
+.research-main-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.research-lead-text {
+  font-size: 1.05rem;
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.research-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.pillar-card {
+  background: #252525;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 3px solid #e50914;
+}
+
+.pillar-card h4 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pillar-card p {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+.research-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.research-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e50914;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.research-cta-btn:hover {
+  background: #f40612;
+  transform: translateY(-2px);
+}
+
+.research-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.research-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

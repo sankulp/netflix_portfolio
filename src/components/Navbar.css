@@ -24,6 +24,12 @@
   align-items: center;
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .navbar-logo img {
   height: 30px;
   margin-right: 30px;
@@ -78,7 +84,6 @@
     width: 24px;
     height: 24px;
   }
-
 
   /* Hide Navbar Links in Mobile */
   .navbar-links {
